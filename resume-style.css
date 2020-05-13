@@ -1,0 +1,425 @@
+:root{
+	/* variables */
+	--name-social-icon-color: #94cbec;
+	--section-heading-color: #3f71ce;
+	--skill-name-color: #ffffff;
+	--designation-color : #00897b;
+	--timeline-icons-color: #e53935;
+	--company-name-color: #546e7a;
+}
+body{
+	margin: 0px;
+	/*text-align: center;*/
+}
+/*horizontal unordered list*/
+/*horizontal lists*/
+.horizontal-list{
+	list-style: none;
+	padding-left: 0px;
+	
+}
+.horizontal-list li{
+	display: inline-block;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+a{
+	font-family:Verdana,Geneva,sans-serif;
+	text-decoration: none;
+
+}
+
+
+
+
+
+/*body header*/
+
+#body-header{
+	height: 70vh;
+	background-image: url(https://wallpapertag.com/wallpaper/full/7/2/1/394035-full-size-dark-background-images-1920x1080-for-computer.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	text-align: center;
+	
+
+}
+#nav-bar{
+	display: inline-block;
+	
+}
+#nav-bar li a{
+	color: var(--name-social-icon-color)
+}
+/*when you hover it will bolden and change color to neon*/
+#nav-bar li a:hover{
+	color: #000000;
+	text-decoration: underline;
+	border-radius: 0.2rem;
+	background-color: rgb(219, 217, 217);
+	/* font-weight: bold; */
+	transition: color 0.5s, font-weight 0.9s;
+	/*add transition time delay on the changed properties as*/
+
+}
+
+
+
+
+/*centering the text*/
+.text-center{
+	text-align: center;
+}
+
+#name-social-container{
+	margin: 10%;
+}
+
+/*Heading for name*/
+#name-heading{
+    border-bottom: 2px solid var(--name-social-icon-color);
+    color: var(--name-social-icon-color);
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    font-size: 3rem;
+    text-decoration: overline;
+    margin-block-start: 0px;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+#resume-name-container{
+	margin: 15px;
+}
+
+
+}
+
+#social-icons-container{
+	display: inline-block !important;
+    margin: 2rem !important;
+	
+}
+#social-icons-container li{
+	height: 25px;
+	width: 25px;
+	margin:0px 15px ;
+    border-radius: 50%;
+}
+#social-icons-container li:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+    
+}
+#social-icons-container i{
+	color: var(--name-social-icon-color);
+	margin-top: 4px;
+}
+
+
+
+
+section{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	/* to align divs in any section in center */
+	align-items: center;
+}
+
+section:nth-child(2n){
+	background-color: lightgrey;
+}
+section:nth-child(2n+1){
+	background-color: white;
+}
+.section-heading{
+	width: auto;
+	padding: 10px 10px 10px;
+	/* margin-bottom: 50px ; */
+	/* as the sections are flex and items are aligned in center this needs not done */
+	/* margin: 10px auto 75px; */
+	
+}
+.section-heading span{
+	display: inline-block;
+	font-size: 45px;
+	margin-right: 0.3em;
+	font-weight: 500;
+	font-family: 'Roboto', sans-serif;
+	color: var(--section-heading-color);
+}
+
+
+
+
+
+
+#about{
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	
+}
+#profile-pic{
+	height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+#profile-pic img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+    
+    box-shadow: 0 0 50px 5px #94cbec;
+}
+#about-para{
+	font-size: 1.4em;
+	color: #6d6969 ;
+    margin:5% 10%;
+	text-align: justify;
+
+}
+.about-bold{
+	color: var(--name-social-icon-color);
+}
+
+/* skills section */
+.skills-capsules-container{
+	align-items: center;
+	width: 70%;
+	/* as capsules have to be flexible */
+	display: flex;
+	/* when width increases or decreases wrap accordingly */
+	flex-wrap: wrap;
+	/* distance between capsules has to be even */
+	justify-content: space-evenly;
+
+	/* margins for the capsule container */
+	margin: 5%;
+}
+
+.capsule-outline{
+	width: 12rem;
+	height: 2rem;
+	border-radius: 1rem;
+	background-color: #868586;
+	margin: 1.5rem;
+}
+.capsule-outline>div{
+	border-radius: 0.3rem 0 0 0.3rem ;
+}
+.skill-name span{
+	color: var(--skill-name-color);
+	display: inline-block;
+	font-family: monospace;
+	font-size: 1.4rem;
+	margin: 0.25em 1em;
+	
+}
+
+
+/* portfolio section */
+.portfolio-container{
+	width: 85%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 5%;
+	
+}
+.portfolio-image-container{
+	position: relative;
+	height: 300px;
+	width: 300px;
+	margin: 10px;
+	border-radius: 1rem;
+}
+.portfolio-image-container img{
+	height: 100%;
+	width: 100%;
+}
+.portfolio-inside-text{
+	
+    position: absolute;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 800;
+    top: 40%;
+    left: 25%;
+    color: #F5F5F5;
+    display: none;
+}
+.portfolio-image-container:hover{
+	background-color:lightgrey;
+	opacity: 0.5;
+}
+.portfolio-image-container:hover .portfolio-inside-text{
+	display: block;
+}
+
+
+
+/*  Work experience section */
+.timeline{
+	width: 75%;
+	position: relative;
+	/* border: 2px solid; */
+	margin-bottom: 5%;
+}
+
+.timeline-box{
+    position: relative;
+    width: 40%;
+    min-height: 150px;
+    margin: 1%;
+    left: 5%;
+    /* border: 2px solid; */
+    font-style: oblique;
+}
+.timeline-box > * {
+    margin: 0 5% ;
+}
+
+/* to achieve alternate left and right boxes using the nth chile pseudo class*/
+.timeline-box:nth-child(2n){
+	left: 53%;
+	
+}
+.timeline-box:nth-child(2n+1){
+	text-align: right;
+	
+}
+
+.designation{
+	color: var(--designation-color);
+	display: inline-block;
+    font-size: 1.5rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+	font-weight: bolder;
+	margin: 5%;
+}
+.company-name{
+	color:var(--company-name-color);
+}
+
+.work-about{
+	margin: 5%;
+	text-align: justify;
+}
+.timeline-box .fas {
+	color: var(--timeline-icons-color);
+}
+
+.timeline-divider{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    border-top: 2px dashed #4DB6AC;
+    border-bottom: 2px dashed #4DB6AC;
+    height: 70%;
+}
+.timeline-traveller{
+	position: sticky;
+	top:inherit;
+	color: #4DB6AC;
+	transform: rotate(90deg);
+}
+
+
+
+
+/* contact section */
+#contact{
+	/* background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); */
+	background: linear-gradient(to right, #00bf8f, #001510);
+}
+
+.contact-get-in-touch-container{
+    width: 80%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 3%;
+}
+.contact-form{
+	width:50%
+}
+.contact-form input,textarea{
+	outline: none;
+	background: inherit;
+    border: none;
+    border-bottom: 2px solid #fff;
+    height: 10vh;
+    width: 90%;
+    margin: 5px auto;
+}
+#form-submit-button{
+    background: inherit;
+    border-radius: 0.6em;
+    color: #fff;
+    font-size: 1rem;
+    margin: 2em 0%;
+    height: 2rem;
+    width: 90%;
+}
+
+.get-in-touch{
+	align-items: center;
+	width: 50%;
+	color: #fff;
+}
+.address-list{
+	list-style: none;
+    font-family: sans-serif;
+    font-size: large;
+}
+.address-list i{
+	margin: 0.4rem;
+}
+
+
+
+
+/*Percentage progress*/
+
+.sixty-percent{
+	width: 60%;
+	height: inherit;
+}
+.fifty-percent{
+	width: 50%;
+	height: inherit;
+}
+.fifty-five-percent{
+	width: 55%;
+	height: inherit;
+}
+.seventy-percent{
+	width: 70%;
+	height: inherit;
+}
+
+
+
+
+
+/* skill indicatoor colors */
+.indicator-color-skill1{
+	background-color: rgb(236, 223, 106);
+	
+}
+.indicator-color-skill2{
+	background-color: rgb(119, 192, 143);
+}
+.indicator-color-skill3{
+	background-color: rgb(56, 124, 163);
+}
