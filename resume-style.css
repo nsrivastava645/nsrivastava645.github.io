@@ -254,6 +254,9 @@ section:nth-child(2n+1){
     color: #F5F5F5;
     display: none;
 }
+.portfolio-inside-text a{
+	color: #F5F5F5;
+}
 .portfolio-image-container:hover{
 	background-color:lightgrey;
 	opacity: 0.5;
